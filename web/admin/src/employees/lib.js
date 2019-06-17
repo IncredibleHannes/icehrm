@@ -1339,13 +1339,6 @@ class EmployeeSkillAdapter extends SubProfileEnabledAdapterBase {
   getFormFields() {
     return [
       ['id', { label: 'ID', type: 'hidden' }],
-      ['employee', {
-        label: 'Employee',
-        type: 'select2',
-        sort: 'none',
-        'allow-null': false,
-        'remote-source': ['Employee', 'id', 'first_name+last_name', 'getActiveSubordinateEmployees'],
-      }],
       ['skill_id', {
         label: 'Skill', type: 'select2', 'allow-null': true, 'remote-source': ['Skill', 'id', 'name'],
       }],
@@ -1356,13 +1349,6 @@ class EmployeeSkillAdapter extends SubProfileEnabledAdapterBase {
 
   getFilters() {
     return [
-      ['employee', {
-        label: 'Employee',
-        type: 'select2',
-        sort: 'none',
-        'allow-null': false,
-        'remote-source': ['Employee', 'id', 'first_name+last_name', 'getActiveSubordinateEmployees'],
-      }],
       ['skill_id', {
         label: 'Skill', type: 'select2', 'allow-null': true, 'null-label': 'All Skills', 'remote-source': ['Skill', 'id', 'name'],
       }],
@@ -1406,13 +1392,6 @@ class EmployeeEducationAdapter extends SubProfileEnabledAdapterBase {
   getFormFields() {
     return [
       ['id', { label: 'ID', type: 'hidden' }],
-      ['employee', {
-        label: 'Employee',
-        type: 'select2',
-        sort: 'none',
-        'allow-null': false,
-        'remote-source': ['Employee', 'id', 'first_name+last_name', 'getActiveSubordinateEmployees'],
-      }],
       ['education_id', {
         label: 'Qualification', type: 'select2', 'allow-null': false, 'remote-source': ['Education', 'id', 'name'],
       }],
@@ -1425,13 +1404,6 @@ class EmployeeEducationAdapter extends SubProfileEnabledAdapterBase {
 
   getFilters() {
     return [
-      ['employee', {
-        label: 'Employee',
-        type: 'select2',
-        sort: 'none',
-        'allow-null': false,
-        'remote-source': ['Employee', 'id', 'first_name+last_name', 'getActiveSubordinateEmployees'],
-      }],
       ['education_id', {
         label: 'Qualification', type: 'select2', 'allow-null': true, 'null-label': 'All Qualifications', 'remote-source': ['Education', 'id', 'name'],
       }],
@@ -1475,13 +1447,6 @@ class EmployeeCertificationAdapter extends SubProfileEnabledAdapterBase {
   getFormFields() {
     return [
       ['id', { label: 'ID', type: 'hidden' }],
-      ['employee', {
-        label: 'Employee',
-        type: 'select2',
-        sort: 'none',
-        'allow-null': false,
-        'remote-source': ['Employee', 'id', 'first_name+last_name', 'getActiveSubordinateEmployees'],
-      }],
       ['certification_id', {
         label: 'Certification', type: 'select2', 'allow-null': false, 'remote-source': ['Certification', 'id', 'name'],
       }],
@@ -1494,13 +1459,6 @@ class EmployeeCertificationAdapter extends SubProfileEnabledAdapterBase {
 
   getFilters() {
     return [
-      ['employee', {
-        label: 'Employee',
-        type: 'select2',
-        sort: 'none',
-        'allow-null': false,
-        'remote-source': ['Employee', 'id', 'first_name+last_name', 'getActiveSubordinateEmployees'],
-      }],
       ['certification_id', {
         label: 'Certification', type: 'select2', 'allow-null': true, 'null-label': 'All Certifications', 'remote-source': ['Certification', 'id', 'name'],
       }],
@@ -1573,13 +1531,6 @@ class EmployeeLanguageAdapter extends SubProfileEnabledAdapterBase {
 
   getFilters() {
     return [
-      ['employee', {
-        label: 'Employee',
-        type: 'select2',
-        sort: 'none',
-        'allow-null': false,
-        'remote-source': ['Employee', 'id', 'first_name+last_name', 'getActiveSubordinateEmployees'],
-      }],
       ['language_id', {
         label: 'Language', type: 'select2', 'allow-null': true, 'null-label': 'All Languages', 'remote-source': ['Language', 'id', 'name'],
       }],
@@ -1624,13 +1575,6 @@ class EmployeeDependentAdapter extends SubProfileEnabledAdapterBase {
   getFormFields() {
     return [
       ['id', { label: 'ID', type: 'hidden' }],
-      ['employee', {
-        label: 'Employee',
-        type: 'select2',
-        sort: 'none',
-        'allow-null': false,
-        'remote-source': ['Employee', 'id', 'first_name+last_name', 'getActiveSubordinateEmployees'],
-      }],
       ['name', { label: 'Name', type: 'text', validation: '' }],
       ['relationship', { label: 'Relationship', type: 'select', source: [['Child', 'Child'], ['Spouse', 'Spouse'], ['Parent', 'Parent'], ['Other', 'Other']] }],
       ['dob', { label: 'Date of Birth', type: 'date', validation: '' }],
